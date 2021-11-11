@@ -5,6 +5,11 @@ If the response code is on the 400 or 500 level, then a call to the [Events V2 A
 
 It uses the PagerDuty supported PHP API: https://github.com/adilbaig/pagerduty
 
+## Requirements
+
+PHP >= 7.4
+composer
+
 ## Steps
 
 #### 1. Create a free PagerDuty account: https://support.pagerduty.com/docs/quick-start-guide

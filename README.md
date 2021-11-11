@@ -34,4 +34,4 @@ Then after adding Events API v2, you will be back in the Integrations page. Copy
 
 #### 5. Copy .env.sample to .env and put your integration key
 #### 6. Modify the code in `webhealth.php` or copy it to a new file to replace the URL with whatever you want to check
-#### 6. Run this script periodically using cron. For example you can run it every 5 minutes `*/5 * * * * php /path/to/your/file.php`
+#### 7. Run this script periodically using cron. For example you can run it every 5 minutes `*/5 * * * * php /path/to/your/monitoringfile.php`

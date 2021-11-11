@@ -1,7 +1,7 @@
 # Simple PHP web health monitor using PagerDuty and Guzzle
 
 The sample file webhealth.php makes a GET request to a fixed URL to monitor and checks the response code to be < 400.
-If the response code is on the 400 or 500 level, then a call to the [Events V2 API](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTgw-events-api-v2-overview)
+If the response code is on the 400 or 500 level, then a call to the [Events V2 API](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTgw-events-api-v2-overview) will be made.
 
 It uses the PagerDuty supported PHP SDK: https://github.com/adilbaig/pagerduty
 
@@ -33,6 +33,5 @@ Then after adding Events API v2, you will be back in the Integrations page. Copy
 <img width="1188" alt="Screen Shot 2021-11-11 at 1 13 03 PM" src="https://user-images.githubusercontent.com/1763107/141297057-2f5aecf3-6978-4a90-a725-255a68c236c3.png">
 
 #### 5. Copy .env.sample to .env and put your integration key
-#### 6. Modify the code in `webhealth.php` to use the URL you want to check
-
-
+#### 6. Modify the code in `webhealth.php` or copy it to a new file to replace the URL with whatever you want to check
+#### 6. Run this script periodically using cron. For example you can run it every 5 minutes `*/5 * * * * php /path/to/your/file.php`

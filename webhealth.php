@@ -22,19 +22,19 @@ $webmon = $container->get(WebMonitor::class);
 $url = "https://ips-cambodia.com/testerror.php";
 $result = $webmon->ping($url);
 if ($result >= 400) {
-    pagerDutyAlert();
+    pagerDutyAlert($url . " is down");
 } else {
     echo "$url is OK\n";
 }
 
-function pagerDutyAlert(): void
+function pagerDutyAlert(string $message): void
 {
     $routingKey = $_ENV['EVENTS_V2_INTEGRATION_KEY'];
 
     try {
         $event = new TriggerEvent(
             $routingKey,
-            "Website is down",
+            $message . '-' . date('Y-m-d'),
             "ips-cambodia.com",
             TriggerEvent::ERROR,
             true // Generate the dedup_key from the driver. If false, the dedup_key will be generated on PD

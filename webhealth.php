@@ -19,9 +19,12 @@ $container = new DI\Container();
  */
 $webmon = $container->get(WebMonitor::class);
 
-$result = $webmon->ping("https://ips-cambodia.com/testerror.php");
+$url = "https://ips-cambodia.com/testerror.php";
+$result = $webmon->ping($url);
 if ($result >= 400) {
     pagerDutyAlert();
+} else {
+    echo "$url is OK\n";
 }
 
 function pagerDutyAlert(): void

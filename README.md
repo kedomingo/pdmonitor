@@ -28,11 +28,11 @@ Once this is done, go to the main menu > Services > Service Directory to see you
 
 <img width="1033" alt="Screen Shot 2021-11-11 at 1 11 56 PM" src="https://user-images.githubusercontent.com/1763107/141296938-2d398a82-3328-4828-b00d-69d7ffe72bb5.png">
 
-Then copy the Integration Key
+Then after adding Events API v2, you will be back in the Integrations page. Copy the Integration Key from the Events API v2 section
 
 <img width="1188" alt="Screen Shot 2021-11-11 at 1 13 03 PM" src="https://user-images.githubusercontent.com/1763107/141297057-2f5aecf3-6978-4a90-a725-255a68c236c3.png">
 
 #### 5. Copy .env.sample to .env and put your integration key
-#### 6. Modify the code to use the URL you want to check
+#### 6. Modify the code in `webhealth.php` to use the URL you want to check
 
 

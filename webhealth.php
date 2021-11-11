@@ -37,12 +37,12 @@ function pagerDutyAlert(): void
             true // Generate the dedup_key from the driver. If false, the dedup_key will be generated on PD
         );
         $responseCode = $event->send();
-        if ($responseCode == 200) {
-            echo "PagerDuty alert sent";
+        if ($responseCode >= 200 && $responseCode < 300) {
+            echo "PagerDuty alert sent\n";
         } elseif ($responseCode == 429) {
-            echo "PagerDuty alert not sent: Rate Limited";
+            echo "PagerDuty alert not sent: Rate Limited\n";
         } else {
-            echo "Could not send alert to PagerDuty. Response code " . $responseCode;
+            echo "Could not send alert to PagerDuty. Response code " . $responseCode . "\n";
         }
     } catch (PagerDutyException $exception) {
         var_dump($exception->getErrors());

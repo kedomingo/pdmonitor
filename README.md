@@ -3,7 +3,7 @@
 The sample file webhealth.php makes a GET request to a fixed URL to monitor and checks the response code to be < 400.
 If the response code is on the 400 or 500 level, then a call to the [Events V2 API](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTgw-events-api-v2-overview)
 
-It uses the PagerDuty supported PHP API: https://github.com/adilbaig/pagerduty
+It uses the PagerDuty supported PHP SDK: https://github.com/adilbaig/pagerduty
 
 ## Requirements
 

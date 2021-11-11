@@ -7,8 +7,8 @@ It uses the PagerDuty supported PHP API: https://github.com/adilbaig/pagerduty
 
 ## Requirements
 
-PHP >= 7.4
-composer
+* PHP >= 7.4
+* composer
 
 ## Steps
 

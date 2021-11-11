@@ -12,6 +12,7 @@ It uses the PagerDuty supported PHP API: https://github.com/adilbaig/pagerduty
 
 ## Steps
 
+#### 0. Clone this repository and run `composer install`
 #### 1. Create a free PagerDuty account: https://support.pagerduty.com/docs/quick-start-guide
 #### 2. Create your Service in PagerDuty: https://support.pagerduty.com/docs/services-and-integrations#section-create-a-new-service
 
